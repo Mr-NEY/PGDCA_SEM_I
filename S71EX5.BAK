@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+void main(){
+	clrscr();
+	double time,formatTime=0000;
+	// cout<<"Enter Time : ";
+	// cin>>time;
+	while (time!=9999){
+	  cout<<"\nEnter Time : ";
+	 cin>>time;
+	 if(time < 1200){
+	 formatTime = time/100.00;
+	 cout<<"\nTime in (12hr format) : "<<formatTime<<" AM"<<endl;
+	 }
+	 else if (time <1300){
+	 formatTime = time/100.00;
+	 cout<<"\nTime in (12hr format) : "<<formatTime<<" PM"<<endl;
+	 }
+	 else if (time < 2400){
+	 formatTime = (time-1200) / 100.00;
+	 cout<<"\nTime in (12hr format) : "<<formatTime<<" PM"<<endl;
+	 }
+	 else if (time == 2400){
+	 cout<<"\nTime in (12hr format) : "<<"00.00 AM"<<endl;
+	 }
+
+	}
+	getch();
+
+}
+
